@@ -25,11 +25,11 @@
 ### 1. 安装与导入
 
 1. 在浏览器中安装 Tampermonkey 扩展，并确保扩展允许用户脚本运行。
-2. 打开仓库中的 [`auto-resume`](./auto-resume)，复制**完整文件内容**。
+2. 打开仓库中的 [`auto-resume.user.js`](./auto-resume.user.js)，复制**完整文件内容**。
 3. 在 Tampermonkey 中选择“添加新脚本”，粘贴代码并保存。
 4. 打开 [BOSS 直聘](https://www.zhipin.com/)，登录自己的账号并进入职位搜索页面。
 
-当前仓库中的源文件名为 `auto-resume`，没有 `.user.js` 后缀，因此推荐**复制到 Tampermonkey 编辑器安装**，而不是把 GitHub 文件链接当成一键安装地址。
+当前仓库的脚本文件名为 `auto-resume.user.js`。可将源码完整复制到 Tampermonkey 编辑器，也可以导入本地下载的脚本文件；GitHub 的普通文件预览页不一定能直接触发用户脚本安装。
 
 ### 2. 首次运行前检查
 
@@ -43,7 +43,7 @@
 
 ## 规则与配置
 
-以下配置项位于 `auto-resume` 源码开头，**目前不是控制面板里的可编辑选项**。修改后请同步更新 Tampermonkey 内实际安装的脚本。
+以下配置项位于 `auto-resume.user.js` 源码开头，**目前不是控制面板里的可编辑选项**。修改后请同步更新 Tampermonkey 内实际安装的脚本。
 
 ~~~javascript
 // 自我介绍；留空时尝试使用聊天页第一条常用语
@@ -137,7 +137,7 @@ const OUTSOURCE_BLACKLIST = [];
 
 ~~~text
 .
-├── auto-resume    # Tampermonkey 用户脚本（v1.1.3）
+├── auto-resume.user.js    # Tampermonkey 用户脚本（v1.1.3）
 ├── README.md      # 使用说明
 ├── .gitignore     # 本地敏感文件与台账导出忽略规则
 └── LICENSE        # MIT License

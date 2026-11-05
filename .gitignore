@@ -1,0 +1,29 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.local.user.js
+private/
+local/
+
+# Private application records / exported ledgers
+boss-ledger-*.json
+*ledger*.private.json
+
+# Local resume files
+resume*.png
+resume*.jpg
+resume*.jpeg
+resume*.webp
+resume*.pdf
+*resume*.png
+*resume*.jpg
+*resume*.jpeg
+*resume*.webp
+*resume*.pdf
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
